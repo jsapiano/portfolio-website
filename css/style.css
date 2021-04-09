@@ -1,7 +1,7 @@
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Primary Color (Blue): #0f0f10;
+Secondary Color (Green): #f6f7f9;
 font-family: 'Questrial', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
@@ -18,6 +18,10 @@ body {
   line-height: 1.4; /* Sets the line-height to 1.4 * the font-size */
   color: #0f0f10;
 }
+
+/* ===========================
+TYPOGRAPHY
+============================ */
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
@@ -52,6 +56,10 @@ img {
   width: 100%;
 }
 
+/* ===========================
+LINKS
+============================ */
+
 a {
   color: #515574;
   text-decoration: none; /* No underlining */
@@ -73,6 +81,10 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
+
+/* ===========================
+BUTTONS
+============================ */
 
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
