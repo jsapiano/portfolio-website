@@ -23,6 +23,7 @@ body {
 TYPOGRAPHY
 ============================ */
 
+
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   line-height: 1.4;
@@ -45,6 +46,10 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+.logo {
+  max-width: 250px;
 }
 
 img {
@@ -97,7 +102,17 @@ BUTTONS
 
 /* Layout styling */
 
+/* ===========================
+Main
+============================ */
+
+main {
+padding-top: 100px;
+}
+
   header {
+    position: fixed;
+    width: 100%;
     background-color: #ffe4c4;
     text-align: center;
     padding: 10px 0;
@@ -109,6 +124,9 @@ BUTTONS
     padding: 10px 0;
   }
 
+.section {
+  padding-top: 15px
+}
 
 .container {
   padding: 0 15px;
@@ -123,10 +141,6 @@ BUTTONS
 }
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#hero h1 {
-  text-align: center; /* Centers text */
-}
 
 #hero {
   background-color: #ffe4c4;
@@ -165,13 +179,6 @@ nav > ul > li > a:visited {
   text-transform: uppercase;
   font-weight: 700;
   color: #ff7f50;
-}
-
-nav > ul > li > a:hover {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #cc6540;
 }
 
 nav > ul > li > a:hover {
