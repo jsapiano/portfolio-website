@@ -100,6 +100,24 @@ BUTTONS
   text-decoration: none;
 }
 
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
 /* Layout styling */
 
 /* ===========================
@@ -107,7 +125,7 @@ Main
 ============================ */
 
 main {
-padding-top: 100px;
+padding-top: 200px;
 }
 
   header {
@@ -134,6 +152,12 @@ padding-top: 100px;
 
 .container {
   max-width: 1200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -186,4 +210,66 @@ nav > ul > li > a:hover {
   text-transform: uppercase;
   font-weight: 700;
   color: #994c30;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+body {
+  background-color: #f6f7f9;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.4; /* Sets the line-height to 1.4 * the font-size */
+  color: #0f0f10;
+}
+
+h1 {
+  text-align: center
+}
+
+#hero span {
+  display: block;
+  text-align: center;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 { margin-top: 0;}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
