@@ -5,7 +5,6 @@ Secondary Color (Green): #f6f7f9;
 font-family: 'Questrial', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -13,17 +12,18 @@ font-family: 'Poppins', sans-serif;
 body {
   background-color: #f6f7f9;
   font-family: 'Questrial', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 400 */
-  line-height: 1.4; /* Sets the line-height to 1.4 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.4;
+  /* Sets the line-height to 1.4 * the font-size */
   color: #0f0f10;
 }
 
 /* ===========================
 TYPOGRAPHY
 ============================ */
-
-
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   line-height: 1.4;
@@ -43,9 +43,16 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+.welcome h1 span {
+  display: block;
+  font-size: 70%;
+  font-weight: 600;
 }
 
 .logo {
@@ -59,44 +66,48 @@ img {
 /* ===========================
 LINKS
 ============================ */
-
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
 
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #994c30;
 }
-
 
 /* ===========================
 BUTTONS
 ============================ */
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   color: #ffffff !important;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -116,31 +127,28 @@ BUTTONS
   opacity: 0.8;
 }
 
-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-
 /* Layout styling */
-
 /* ===========================
 Main
 ============================ */
-
 main {
-padding-top: 200px;
+  padding-top: 120px;
 }
 
-  header {
-    position: fixed;
-    width: 100%;
-    background-color: #ffe4c4;
-    text-align: center;
-    padding: 10px 0;
-  }
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #111121;
+  text-align: center;
+  padding: 10px 0;
+}
 
-  footer {
-    background-color: #ffe4c4;
-    text-align: center;
-    padding: 10px 0;
-  }
+footer {
+  background-color: #111121cc;
+  text-align: center;
+  padding: 10px 0;
+  color: #f2f2f7
+}
 
 .section {
   padding-top: 15px
@@ -148,68 +156,92 @@ padding-top: 200px;
 
 .container {
   padding: 0 15px;
-}
-
-.container {
-  max-width: 1200px;
-}
-
-.container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#hero {
-  background-color: #ffe4c4;
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #111121cc;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+  color: #f2f2f7
 }
 
 .center {
   text-align: center;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
   max-width: 100%
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
+nav>ul>li>a {
+  padding: 0 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff7f50;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #994c30;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
 
 /* ==============================
@@ -226,50 +258,63 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-}
 
-body {
-  background-color: #f6f7f9;
-  font-family: 'Questrial', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 400 */
-  line-height: 1.4; /* Sets the line-height to 1.4 * the font-size */
-  color: #0f0f10;
-}
+  main {
+    padding-top: 98px;
+  }
 
-h1 {
-  text-align: center
-}
+  body {
+    background-color: #f6f7f9;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    /* Sets the font size to 16px */
+    font-weight: 400;
+    /* Sets the font weight to 400 */
+    line-height: 1.4;
+    /* Sets the line-height to 1.4 * the font-size */
+    color: #0f0f10;
+  }
 
-#hero span {
-  display: block;
-  text-align: center;
-}
+  #hero {
+    text-align: center
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  #hero span {
+    display: block;
+    text-align: center;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
+  #hero img {
+  max-width: 300px;
+  margin-bottom: 2em
+  }
+  .col-md-6 {
+    width: 50%;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
 
-#about-page h3 { margin-top: 0;}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+
+@media only screen and (min-width: 1440px) {}
