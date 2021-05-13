@@ -141,6 +141,7 @@ header {
   background-color: #111121;
   text-align: center;
   padding: 10px 0;
+  z-index: 99999;
 }
 
 footer {
@@ -148,6 +149,15 @@ footer {
   text-align: center;
   padding: 10px 0;
   color: #f2f2f7
+}
+
+.social .far {
+  font-size: 2em;
+  padding: 15px
+}
+
+.social .fab {
+  font-size: 1.8em;
 }
 
 .section {
@@ -171,6 +181,11 @@ footer {
   border-bottom: 1px solid #4a4a4a;
 }
 
+#work .row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 #hero {
   background-color: #111121cc;
   padding: 20px 0;
@@ -189,6 +204,7 @@ nav>ul {
 nav>ul>li {
   display: inline-block;
   max-width: 100%
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -213,8 +229,13 @@ nav>ul>li>a:hover {
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -226,8 +247,13 @@ nav>ul>li>a:hover {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -238,10 +264,14 @@ nav>ul>li>a:hover {
   animation-timing-function: linear;
 }
 
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 /* ==============================
@@ -285,17 +315,71 @@ Medium devices (640px and larger)
   }
 
   #hero img {
-  max-width: 300px;
-  margin-bottom: 2em
+    max-width: 300px;
+    margin-bottom: 2em
   }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
 
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 30px
   }
+
+#work .row, .neg-margin {
+  margin-left: -30px;
+  margin-left: -30px;
+}
 
   .row::after {
     content: "";
@@ -311,10 +395,57 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-
 @media only screen and (min-width: 1440px) {}
